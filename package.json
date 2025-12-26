@@ -1,0 +1,8 @@
+{
+  "name": "mi-web-simple",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve -s .",
+    "build": "echo 'No hay build porque es HTML'"
+  }
+}
