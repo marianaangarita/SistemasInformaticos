@@ -1,2 +1,0 @@
-He desarrollado una página web sencilla con navegación interna. La he creado completamente desde cero y, aunque todavía no tengo conocimientos de CSS, su diseño visual es básico, pero la funcionalidad es completa y operativa.
-Inicialmente había elaborado un archivo README.md, pero lo he sustituido por este instrucciones.txt, tal como se solicitó en las instrucciones del ejercicio.
