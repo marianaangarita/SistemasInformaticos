@@ -1,0 +1,23 @@
+<!--Inicio 6) Añadir una línea de código del tipo document.writeln para que aparezca la frase  “Permitida entrada para {nombre}”  
+-->
+<html>
+<head>
+    <title>Datos en Formularios</title>
+    <script>
+        function saludo(nombre) {
+            // Línea original (he añadido <br> para que se vea mejor)
+            document.writeln(`Hola, bon dia ${nombre} <br>`);
+            
+            // Nueva línea solicitada
+            document.writeln(`Permitida entrada para ${nombre}`);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="formu_datos">
+        Escribe tu nombre: <input type="text" name="entrada" />
+        <input type="button" value="Pulsa aquí" onclick="saludo(entrada.value)" />
+    </form>
+</body>
+</html>

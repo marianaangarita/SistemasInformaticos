@@ -1,0 +1,59 @@
+<!--Funciones 6) El Simulador de "Black Friday"
+Contexto: Una tienda online necesita una herramienta rápida para que sus dependientes calculen el
+precio final de un producto aplicando un descuento especial y, posteriormente, el IVA.
+Enunciado: Crea un programa modular que pida al usuario el precio base de un producto y realice las
+siguientes operaciones utilizando funciones independientes:
+1. Función aplicarDescuento(precio, descuento): Debe recibir el precio y un porcentaje (por
+ejemplo, 15%), y devolver el nuevo precio tras restar el descuento.
+2. Función calcularPVP(precioSinIVA): Debe recibir el precio (ya descontado) y devolver el precio
+final sumándole el 21% de IVA.
+3. Función mostrarFactura(): Esta será la función principal (similar a inicio ). Debe solicitar el dato
+por prompt , llamar a las funciones anteriores y mostrar el resultado final usando un único alert
+con Template Literals (ej: `El precio final es: ${resultado}€`).-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador Black Friday</title>
+    <script>
+        // 1. Función aplicarDescuento: Recibe precio y % de descuento
+        const aplicarDescuento = (precio, porcentaje) => {
+            const descuento = precio * (porcentaje / 100);
+            return precio - descuento;
+        };
+
+        // 2. Función calcularPVP: Recibe el precio rebajado y añade el 21% de IVA
+        const calcularPVP = (precioSinIVA) => {
+            // Multiplicar por 1.21 es lo mismo que sumar el 21%
+            return precioSinIVA * 1.21; 
+        };
+
+        // 3. Función principal mostrarFactura
+        const mostrarFactura = () => {
+            // Pedimos el precio base
+            const entrada = prompt("Introduce el precio base del producto:");
+            const precioBase = parseFloat(entrada);
+
+            // Definimos el descuento de Black Friday (ej: 15%)
+            const descuentoBF = 15;
+
+            // Paso A: Aplicamos el descuento
+            const precioRebajado = aplicarDescuento(precioBase, descuentoBF);
+
+            // Paso B: Calculamos el precio final con IVA sobre el precio rebajado
+            const precioFinal = calcularPVP(precioRebajado);
+
+            // Mostramos el resultado. 
+            // .toFixed(2) sirve para cortar los decimales a solo 2 dígitos.
+            alert(`El precio final es: ${precioFinal.toFixed(2)}€`);
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Cálculo Precio Black Friday</h1>
+    <p>Pulsa el botón para calcular el precio final con descuento e IVA.</p>
+    
+    <button onclick="mostrarFactura()">Calcular Precio</button>
+</body>
+</html>

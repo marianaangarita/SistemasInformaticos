@@ -1,0 +1,67 @@
+<!--Funciones 7) Calculadora de Salud "FitCheck"
+Contexto: Un gimnasio local quiere una aplicación web sencilla para que sus clientes calculen si están
+en su peso ideal y cuánta agua deben beber según su actividad física.
+Enunciado: Utilizando los conceptos de Javascript ES9 vistos en clase3333, crea un programa que
+gestione dos métricas de salud:
+1. Función calcularIMC(peso, altura): Debe recibir el peso (kg) y la altura (metros), y devolver el
+Índice de Masa Corporal mediante la fórmula: $IMC = \frac{peso}{altura^2}$.
+2. Función hidratacion(peso): Según los expertos, se deben beber unos 35ml de agua por cada
+kilo de peso. La función debe recibir el peso y devolver los litros recomendados (ej: peso *
+0.035).
+3. Función generarInforme():
+o Pedirá al usuario su peso y altura mediante inputs.
+o Habrá una función llamada inicio (o main) y llamará a las dos funciones anteriores.
+o Mostrará el resultado en un único alert o mediante document.writeln usando Template
+Literals de la siguiente forma:
+
+"Tu IMC es de: ${imc} y deberías beber ${litros} litros de agua al día."-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Salud FitCheck</title>
+    <script>
+        // 1. Función calcularIMC: Peso / (Altura * Altura)
+        const calcularIMC = (peso, altura) => {
+            return peso / (altura * altura);
+        };
+
+        // 2. Función hidratacion: Peso * 0.035 (35ml por kg)
+        const hidratacion = (peso) => {
+            return peso * 0.035;
+        };
+
+        // 3. Función Principal: generarInforme
+        const generarInforme = () => {
+            // Obtenemos los valores de las cajas de input por su ID
+            // Usamos parseFloat para asegurar que son números (y acepten decimales)
+            const pesoUsuario = parseFloat(document.getElementById('caja_peso').value);
+            const alturaUsuario = parseFloat(document.getElementById('caja_altura').value);
+
+            // Llamamos a las funciones de cálculo
+            const resultadoIMC = calcularIMC(pesoUsuario, alturaUsuario);
+            const resultadoAgua = hidratacion(pesoUsuario);
+
+            // Mostramos el resultado usando Template Literals (comillas invertidas)
+            // .toFixed(2) reduce los decimales a dos dígitos
+            alert(`Tu IMC es de: ${resultadoIMC.toFixed(2)} y deberías beber ${resultadoAgua.toFixed(2)} litros de agua al día.`);
+        };
+    </script>
+</head>
+
+<body>
+    <h1>FitCheck: Tu Salud al Día</h1>
+    <p>Introduce tus datos para generar tu informe de salud.</p>
+
+    <div>
+        <label>Tu Peso (kg):</label><br>
+        <input type="number" id="caja_peso" placeholder="Ej: 70"><br><br>
+
+        <label>Tu Altura (en metros):</label><br>
+        <input type="number" id="caja_altura" placeholder="Ej: 1.75"><br><br>
+
+        <button onclick="generarInforme()">Generar Informe</button>
+    </div>
+</body>
+</html>

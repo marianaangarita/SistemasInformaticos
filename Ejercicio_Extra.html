@@ -1,0 +1,43 @@
+<!--EJERCICIO HMTL + JS  
+Realizar programa para una web, en el cual el usuario introduce su edad y su ciudad de residencia.  La web muestra la frase “Bienvenido xxx , residente en yyy”-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio Datos Usuario</title>
+    <meta charset="UTF-8">
+    <script>
+        // Esta función lee los 3 datos y escribe la frase
+        function mostrarDatos(nom, ed, ciu) {
+            
+            // Construimos la frase solicitada
+            // Nota: Aunque pedimos la edad, la frase final solo pide "Bienvenido xxx, residente en yyy"
+            document.writeln(`Bienvenido ${nom}, residente en ${ciu}.`);
+            
+            // Opcional: Si quieres mostrar también la edad, descomenta la siguiente línea:
+            // document.writeln(`<br>Tu edad registrada es: ${ed} años.`);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Formulario de Registro</h2>
+    
+    <form name="miFormulario">
+        
+        <label>Nombre:</label> 
+        <input type="text" name="campo_nombre" placeholder="Escribe tu nombre"><br><br>
+
+        <label>Edad:</label> 
+        <input type="number" name="campo_edad" placeholder="Escribe tu edad"><br><br>
+
+        <label>Ciudad:</label> 
+        <input type="text" name="campo_ciudad" placeholder="Escribe tu ciudad"><br><br>
+
+        <input type="button" value="Enviar Datos" 
+               onclick="mostrarDatos(campo_nombre.value, campo_edad.value, campo_ciudad.value)" />
+    
+    </form>
+</body>
+
+</html>
