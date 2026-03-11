@@ -1,34 +1,28 @@
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
+import { productos } from './database.js';
 
+// 1. Aquí importamos la validación desde el archivo externo
+import { ejecutaValidacion } from './validaciones.js'; 
 
 const app = express();
 app.use(express.json());
 
-
-import { productos } from './database.js';
-
-
-const ejecutaValidacion = (data, validacion, mensajedeError) =>
-  validacion(data) ? data : { error: mensajedeError }
-
+// (La función ejecutaValidacion ya no está aquí escrita, la estamos importando arriba)
 
 app.route('/productos')
   .get((req, res) => {
     res.json(productos)
   })
 
-
   .post((req, res) => {
     const { titulo, precio } = req.body
-
 
     const nuevoProducto = {
       id: uuidv4(),
       titulo: titulo,
       precio: precio
     }
-
 
     const valida_titulo = ejecutaValidacion(
       titulo,
@@ -40,7 +34,6 @@ app.route('/productos')
       data => data && data > 0.05,
       'Mínimo 0.1 euros'
     )
-
 
     console.log("valida titulo", valida_titulo)
       
@@ -56,11 +49,9 @@ app.route('/productos')
       res.status(201).json(nuevoProducto) // respuesta creado producto
     })
 
-
 app.get('/', (req, res) => {
   res.send('Backend productos')
 })
-
 
 app.listen(3000, () => {
   console.log('Activado localhost:3000.')

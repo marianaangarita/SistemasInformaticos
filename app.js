@@ -1,10 +1,19 @@
+
+
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { productos } from './database.js';
 
-
 const app = express();
 app.use(express.json());
+
+
+
+
+
+const ejecutaValidacion = (data, validacion, mensajedeError) =>
+  validacion(data) ? data : { error: mensajedeError }
+
 
 app.route('/productos')
   .get((req, res) => {
@@ -17,12 +26,43 @@ app.route('/productos')
     const nuevoProducto = {
       id: uuidv4(),
       titulo: titulo,
-      precio:precio
+      precio: precio
     }
 
 
-    productos.push(nuevoProducto)
-    res.status(201).json(nuevoProducto) // respuesta creado producto
+    const valida_titulo = ejecutaValidacion(
+      titulo,
+      data => data && data.length > 3,
+      'Mínimo de 4 carácteres'
+    )
+    const valida_precio = ejecutaValidacion(
+      precio,
+      data => data && data > 0.05,
+      'Mínimo 0.1 euros'
+    )
+
+
+    console.log("valida titulo", valida_titulo)
+      
+    if (valida_titulo.error) {
+      return res.status(400).send(valida_titulo.error);
+    }
+    
+    if (valida_precio.error) {
+      return res.status(400).send(valida_precio.error);
+    }
+    
+      productos.push(nuevoProducto)
+      res.status(201).json(nuevoProducto) // respuesta creado producto
+    })
+
+
+
+app.route('/productos/:id')
+  .get((req, res) => {
+    const productoEncontrado = productos.find(producto => producto.id == req.params.id);
+    (productoEncontrado) ? res.json(productoEncontrado)
+      : res.status(404).send(`El producto con id ${req.params.id} no existe`)
   })
 
 
