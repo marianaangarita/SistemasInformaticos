@@ -1,9 +1,0 @@
-Inicio
-    Escribir "Introduce un número:"
-    Leer n
-    resultado = 1
-    Mientras n > 1:
-        resultado = resultado * n
-        n = n - 1
-    Escribir "El factorial es: " resultado
-Fin
