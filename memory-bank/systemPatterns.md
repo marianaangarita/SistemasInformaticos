@@ -9,3 +9,7 @@ El proyecto se rige por una separación estricta entre la interfaz y la lógica.
 ## Requisitos Técnicos
 - **Componentes Modulares**: Se deben crear y usar al menos 3 componentes distintos (por ejemplo: el cuestionario/test, la pantalla de resultados, un visualizador de imágenes o tarjetas de hardware).
 - **Orquestación**: La aplicación debe integrar todos los componentes de manera encapsulada y estructurada.
+
+## Reglas de Trabajo (IA)
+- **Registro de Prompts**: Cada vez que se envíe un prompt, DEBE guardarse automáticamente en `mensajes_prompts.txt`.
+- **Actualización Continua**: Cada avance en el proyecto DEBE reflejarse automáticamente actualizando `activeContext.md`, `progress.md` y cualquier otro archivo relevante del Memory Bank.

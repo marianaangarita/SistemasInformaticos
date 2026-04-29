@@ -16,3 +16,7 @@ Prompt 4:
 "He probado el index html y funciona puedo responder a las preguntas. pincha en este  enlace: https://docs.cline.bot/features/memory-bank
 y comprueba que estamos siguiendo la métodologia de memory bank si hay algo que falta modifiquemoslo y añadamoslo, además siento que sería más profesional si guardasemos el css y el java script correspondiente en carpetas separadas una llamada style y otra carpeta llamada javascript que son los que van ainteractuar con el index"
 Acción realizada: Se revisó la documentación del Memory Bank, y se añadieron los archivos faltantes ('projectbrief.md' y 'techContext.md') para cumplir al 100% con los core files de la metodología. Además, se movieron los archivos JS y CSS a sus respectivas carpetas y se actualizaron las rutas en 'index.html'.
+
+Prompt 5:
+"vale quiero que guardes en memmoria que a partir de ahora cda vez que mande un prompt lo guardes en el archivo mensajes_prompts.txt y cada vez que avancemos en el proyecto tambien actualices el active content y basicamente actulices todo lo que haga falta siguiendo el memory bank y efectivamente sube estos nuevos cambios a mi github gracias"
+Acción realizada: Se ha añadido esta instrucción como regla permanente en systemPatterns.md, se actualizaron progress.md y activeContext.md, y se subieron los cambios de carpetas a GitHub.
