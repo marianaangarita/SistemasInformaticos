@@ -23,4 +23,7 @@ Acción realizada: Se ha añadido esta instrucción como regla permanente en sys
 
 Prompt 6:
 "quiero que leas el pdf donde salen las intrucciones y me digas en base a lo que tenemos actualmente que es lo que nos hace falta para mejorar el proyecto y cumpla que con los requisitos establecidos, piensalo bien"
-Acción realizada: Se ha analizado el archivo pdf_text.txt comparándolo con el estado actual del proyecto para identificar posibles puntos de mejora. Se ha actualizado el activeContext.md y se le presentará al usuario el diagnóstico.
+
+Prompt 7:
+"que es lo que hace la tarjeta info explicalo porque yo al abrir el html vi solo preguntas y puntuacion, crea las branches necesarias"
+Acción realizada: Se le explicó al usuario el funcionamiento de la tarjeta de información y se creó la rama 'feature/mejoras-contenido' en Git cumpliendo con la regla de uso de branches.
