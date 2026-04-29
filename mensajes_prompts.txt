@@ -3,3 +3,11 @@
 Prompt 1:
 "si empieza por e memory bank y crea también el archivo mensajes_prompts.txt"
 Acción realizada: Creación de la estructura de la carpeta memory-bank con sus archivos correspondientes de contexto, arquitectura y progreso, además de la inicialización de este archivo de logs de prompts.
+
+Prompt 2:
+"crea el esqueleto base index.html, style.css, app.ja y components.js teniendo siempre en cuanta lo que diga el Memory Bank"
+Acción realizada: Se han creado los archivos básicos (HTML, CSS, JS) cumpliendo la arquitectura de systemPatterns.md: componentes puros en components.js y lógica en app.js.
+
+Prompt 3:
+"crea más preguntas sobre linux, base de datos y hardware. Luego sube estos archivos a GitHuB"
+Acción realizada: Se han añadido preguntas adicionales sobre Linux, Bases de Datos y Hardware en el archivo app.js. Además, se ha actualizado el Memory Bank y se han subido todos los cambios a GitHub mediante git add, commit y push.

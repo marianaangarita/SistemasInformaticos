@@ -1,10 +1,10 @@
 # Contexto Activo
 
 ## Foco Actual
-- Inicialización de la estructura del proyecto y configuración del "cerebro del proyecto" (Memory Bank).
-- Preparación del archivo para almacenar los prompts (`mensajes_prompts.txt`).
+- Ampliación de la base de preguntas de la aplicación (Linux, BBDD, Hardware).
+- Sincronización del repositorio local con GitHub (git push).
 
 ## Próximos Pasos (Inmediatos)
-1. Iniciar un repositorio Git y configurar ramas.
-2. Crear la estructura básica de archivos del proyecto web (`index.html`, `style.css`, `app.js`, `components.js`).
-3. Definir y pedir a la IA el primer componente puro en `components.js`.
+1. Probar la aplicación localmente en el navegador abriendo `index.html`.
+2. Identificar si se desean añadir imágenes a las preguntas (usando el soporte para imágenes ya incluido en los componentes).
+3. Entregar el proyecto si se considera finalizado.

@@ -6,8 +6,8 @@
 - [x] Creación del archivo de registro `mensajes_prompts.txt`.
 
 ## Lo que falta por hacer
-- [ ] Iniciar repositorio de Git y primer commit.
-- [ ] Creación del cascarón básico HTML y CSS.
-- [ ] Implementación de `components.js` con 3 componentes puros (ej. pregunta de test, tarjeta de hardware, pantalla de resultados).
-- [ ] Implementación de `app.js` con el motor lógico, orquestación y sistema de puntuación.
-- [ ] Base de datos o array de preguntas de Sistemas (Linux, Windows, Hardware, Redes, Contenedores).
+- [x] Iniciar repositorio de Git y primer commit.
+- [x] Creación del cascarón básico HTML y CSS.
+- [x] Implementación de `components.js` con 3 componentes puros (ej. pregunta de test, tarjeta de hardware, pantalla de resultados).
+- [x] Implementación de `app.js` con el motor lógico, orquestación y sistema de puntuación.
+- [x] Base de datos o array de preguntas de Sistemas (Linux, Windows, Hardware, Redes, Contenedores).
