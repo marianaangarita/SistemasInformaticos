@@ -11,3 +11,8 @@ Acción realizada: Se han creado los archivos básicos (HTML, CSS, JS) cumpliend
 Prompt 3:
 "crea más preguntas sobre linux, base de datos y hardware. Luego sube estos archivos a GitHuB"
 Acción realizada: Se han añadido preguntas adicionales sobre Linux, Bases de Datos y Hardware en el archivo app.js. Además, se ha actualizado el Memory Bank y se han subido todos los cambios a GitHub mediante git add, commit y push.
+
+Prompt 4:
+"He probado el index html y funciona puedo responder a las preguntas. pincha en este  enlace: https://docs.cline.bot/features/memory-bank
+y comprueba que estamos siguiendo la métodologia de memory bank si hay algo que falta modifiquemoslo y añadamoslo, además siento que sería más profesional si guardasemos el css y el java script correspondiente en carpetas separadas una llamada style y otra carpeta llamada javascript que son los que van ainteractuar con el index"
+Acción realizada: Se revisó la documentación del Memory Bank, y se añadieron los archivos faltantes ('projectbrief.md' y 'techContext.md') para cumplir al 100% con los core files de la metodología. Además, se movieron los archivos JS y CSS a sus respectivas carpetas y se actualizaron las rutas en 'index.html'.
