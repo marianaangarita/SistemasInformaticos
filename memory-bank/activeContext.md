@@ -1,9 +1,9 @@
 # Contexto Activo
 
 ## Foco Actual
-- Análisis de la rúbrica y los requerimientos del documento original (pdf_text.txt).
-- Identificación de posibles carencias en el proyecto (ej. imágenes, variedad de componentes) respecto a lo que pide la profesora/evaluador.
+- Preparación del entorno de trabajo en la nueva rama de Git (`feature/mejoras-contenido`).
+- Planificación de la inclusión de imágenes y preguntas de Redes/Docker.
 
 ## Próximos Pasos (Inmediatos)
-1. Presentar al usuario la evaluación y las opciones de mejora para sacar la máxima nota.
-2. Implementar las mejoras que el usuario elija basadas en dicha auditoría.
+1. Desarrollar y añadir las preguntas de Docker y Redes usando imágenes en la nueva rama.
+2. Subir (push) esta rama a GitHub y fusionarla (merge) con main.
