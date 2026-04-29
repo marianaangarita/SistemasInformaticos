@@ -1,0 +1,5 @@
+--- REGISTRO DE PROMPTS Y COMANDOS A LA IA ---
+
+Prompt 1:
+"si empieza por e memory bank y crea también el archivo mensajes_prompts.txt"
+Acción realizada: Creación de la estructura de la carpeta memory-bank con sus archivos correspondientes de contexto, arquitectura y progreso, además de la inicialización de este archivo de logs de prompts.
