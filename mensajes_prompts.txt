@@ -20,3 +20,7 @@ Acción realizada: Se revisó la documentación del Memory Bank, y se añadieron
 Prompt 5:
 "vale quiero que guardes en memmoria que a partir de ahora cda vez que mande un prompt lo guardes en el archivo mensajes_prompts.txt y cada vez que avancemos en el proyecto tambien actualices el active content y basicamente actulices todo lo que haga falta siguiendo el memory bank y efectivamente sube estos nuevos cambios a mi github gracias"
 Acción realizada: Se ha añadido esta instrucción como regla permanente en systemPatterns.md, se actualizaron progress.md y activeContext.md, y se subieron los cambios de carpetas a GitHub.
+
+Prompt 6:
+"quiero que leas el pdf donde salen las intrucciones y me digas en base a lo que tenemos actualmente que es lo que nos hace falta para mejorar el proyecto y cumpla que con los requisitos establecidos, piensalo bien"
+Acción realizada: Se ha analizado el archivo pdf_text.txt comparándolo con el estado actual del proyecto para identificar posibles puntos de mejora. Se ha actualizado el activeContext.md y se le presentará al usuario el diagnóstico.

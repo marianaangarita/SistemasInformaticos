@@ -1,9 +1,9 @@
 # Contexto Activo
 
 ## Foco Actual
-- Consolidación del flujo de trabajo: Automatización del registro de prompts y del mantenimiento continuo del Memory Bank.
-- Subida de la nueva estructura de carpetas a GitHub.
+- Análisis de la rúbrica y los requerimientos del documento original (pdf_text.txt).
+- Identificación de posibles carencias en el proyecto (ej. imágenes, variedad de componentes) respecto a lo que pide la profesora/evaluador.
 
 ## Próximos Pasos (Inmediatos)
-1. Esperar indicaciones del usuario sobre nuevas funcionalidades (ej. imágenes, más bases de datos, mejoras visuales).
-2. Mantener la disciplina de Memory Bank (Registro + Actualización de contexto) en cada interacción.
+1. Presentar al usuario la evaluación y las opciones de mejora para sacar la máxima nota.
+2. Implementar las mejoras que el usuario elija basadas en dicha auditoría.
