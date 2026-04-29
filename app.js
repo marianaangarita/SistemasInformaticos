@@ -63,10 +63,10 @@ function renderCurrentState() {
     if (state.currentQuestionIndex < state.questions.length) {
         // Todavía hay preguntas
         const currentQuestion = state.questions[state.currentQuestionIndex];
-        
+
         // Uso de los componentes puros
         htmlContent += renderInfoCard(
-            "🧠 Módulo de Evaluación", 
+            "🧠 Módulo de Evaluación",
             `Pregunta ${state.currentQuestionIndex + 1} de ${state.questions.length}`
         );
         htmlContent += renderQuestionCard(currentQuestion.text, currentQuestion.options);
@@ -86,11 +86,11 @@ function renderCurrentState() {
     } else {
         // Test Finalizado
         htmlContent += renderInfoCard(
-            "🎉 ¡Test Completado!", 
+            "🎉 ¡Test Completado!",
             "Has finalizado todas las preguntas de la Autoescuela de Sistemas."
         );
         htmlContent += renderScore(state.score, state.questions.length);
-        
+
         htmlContent += `
             <div style="text-align: center; margin-top: 2rem;">
                 <button class="option-btn" style="background-color: var(--primary-color); color: white;" onclick="resetTest()">Volver a intentar</button>
@@ -107,10 +107,10 @@ function handleAnswer(selectedIndex) {
     if (selectedIndex === currentQuestion.correctIndex) {
         state.score++; // Sumar punto si es correcto
     }
-    
+
     // Avanzar a la siguiente pregunta
     state.currentQuestionIndex++;
-    
+
     // Re-renderizar la interfaz
     renderCurrentState();
 }
