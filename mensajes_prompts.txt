@@ -38,3 +38,11 @@ Acci√≥n realizada: Se cre√≥ model.js, se refactoriz√≥ app.js, se generaron im√°g
 Prompt 10:
 "genial, habria alguna manera que este implementation_plan y luego el walkthrough.md puedan aÒadirse al memory baNK? o mejor dicho algunos de estos archivos actuales en el memory bank podrian cumplir con la funcion que hiciste para el implementation-PLAN Y WALKTHROUGH.MD y aÒadirlas a esos archivos"
 AcciÛn realizada: Se actualizÛ systemPatterns.md para incluir permanentemente el diseÒo arquitectÛnico MVC definido en el implementation_plan.
+
+Prompt 11:
+"genial que es lo que nos falta entonces?"
+Acci√≥n realizada: Se le indic√≥ al usuario que el c√≥digo est√° terminado y falta probar, hacer commit, push a GitHub y merge.
+
+Prompt 12:
+"todo correcto"
+Acci√≥n realizada: Se ejecutaron los comandos de git para commitear, hacer push y merge a main, finalizando el proyecto.
