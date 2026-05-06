@@ -27,3 +27,14 @@ Prompt 6:
 Prompt 7:
 "que es lo que hace la tarjeta info explicalo porque yo al abrir el html vi solo preguntas y puntuacion, crea las branches necesarias"
 Acción realizada: Se le explicó al usuario el funcionamiento de la tarjeta de información y se creó la rama 'feature/mejoras-contenido' en Git cumpliendo con la regla de uso de branches.
+
+Prompt 8:
+"en base a lo que pone el pdf, indica que falta por añadir y luego Implementalo. A parte recuerda que todo lo tienes que hacer en base al modelo vista controlador y si no está asi ajustalo para que asi sea"
+
+Prompt 9:
+"si me parece bien ejecutalo todo e indicame donde esta el plementatio_plan.md"
+Acción realizada: Se creó model.js, se refactorizó app.js, se generaron imágenes con IA para Docker, Redes y Hardware, se actualizaron las preguntas del test y se ajustó estrictamente al patrón MVC. También se actualizó el Memory Bank y este registro.
+
+Prompt 10:
+"genial, habria alguna manera que este implementation_plan y luego el walkthrough.md puedan a�adirse al memory baNK? o mejor dicho algunos de estos archivos actuales en el memory bank podrian cumplir con la funcion que hiciste para el implementation-PLAN Y WALKTHROUGH.MD y a�adirlas a esos archivos"
+Acci�n realizada: Se actualiz� systemPatterns.md para incluir permanentemente el dise�o arquitect�nico MVC definido en el implementation_plan.

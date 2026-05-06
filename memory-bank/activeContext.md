@@ -1,9 +1,10 @@
 # Contexto Activo
 
 ## Foco Actual
-- Preparación del entorno de trabajo en la nueva rama de Git (`feature/mejoras-contenido`).
-- Planificación de la inclusión de imágenes y preguntas de Redes/Docker.
+- Verificación del refactor a MVC (separación de model.js, components.js y app.js).
+- Integración finalizada de imágenes generadas por IA para Docker, Redes y Hardware.
 
 ## Próximos Pasos (Inmediatos)
-1. Desarrollar y añadir las preguntas de Docker y Redes usando imágenes en la nueva rama.
-2. Subir (push) esta rama a GitHub y fusionarla (merge) con main.
+1. Subir (push) los últimos cambios de la rama `feature/mejoras-contenido` a GitHub.
+2. (Opcional) Revisión del diseño final y experiencia de usuario.
+3. Fusionar (merge) con main si todo está correcto.

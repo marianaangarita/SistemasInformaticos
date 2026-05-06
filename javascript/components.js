@@ -45,3 +45,13 @@ function renderInfoCard(title, description, imageUrl = null) {
         </div>
     `;
 }
+
+// 4. Componente de Imagen (nuevo)
+function renderImageComponent(imageUrl, altText = "Imagen de la pregunta") {
+    if (!imageUrl) return '';
+    return `
+        <div class="image-container" style="text-align: center; margin: 1rem 0;">
+            <img src="${imageUrl}" alt="${altText}" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+        </div>
+    `;
+}
