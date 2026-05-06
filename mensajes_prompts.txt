@@ -46,3 +46,7 @@ Acción realizada: Se le indicó al usuario que el código está terminado y fal
 Prompt 12:
 "todo correcto"
 Acción realizada: Se ejecutaron los comandos de git para commitear, hacer push y merge a main, finalizando el proyecto.
+
+Prompt 13:
+"el pdf_text.txt que función tiene?"
+Acción realizada: Se le explicó al usuario que pdf_text.txt contiene la extracción en texto plano de las instrucciones del PDF original para facilitar su lectura.
